@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Background | @burntpiano</title>
+    <link href="/static/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/webp" href="/static/favicon.webp" sizes="96x96">
+</head>
+
+<body class="dark:bg-neutral-800 dark:text-white px-4 flex">
+    
+    <nav id="mobile-menu" class="fixed top-0 left-0 w-60 h-screen bg-black text-white p-4 space-y-6 z-50 hidden md:block">
+        <div class="flex flex-col items-center space-y-2">
+        <a href="https://github.com/burntpiano" class="inline-flex rounded-full overflow-hidden">
+            <img src="/static/profilePic.jpg" alt="Monochrome forensics diagram" class="h-20 w-20">
+        </a>
+        <a href="https://github.com/burntpiano" class="text-sm hover:underline">@burntpiano</a>
+        </div>
+        <div>
+            <h2 class="text-sm uppercase tracking-wider text-gray-400 mb-2">Site Sections</h2>
+            <ul class="space-y-2">
+                <li><a href="/index.html" class="block hover:underline">Home</a></li>
+                <li><a href="/body/about.html" class="block hover:underline">About</a></li>
+                <li><a href="/body/background.html" class="block hover:underline">Background</a></li>
+                <li><a href="/body/skills.html" class="block hover:underline">Skills</a></li>
+                <li><a href="/body/contact.html" class="block hover:underline">Contact</a></li>
+            </ul>
+            <h2 class="text-sm uppercase tracking-wider text-gray-400 mt-4 mb-2">Projects</h2>
+            <ul class="space-y-2">
+                <li><a href="https://github.com/burntpiano/YACRUD" target="_blank" rel="noopener noreferrer" class="block hover:underline">YACRUD</a></li>
+                <li><a href="https://github.com/burntpiano/Hardware-Projects" target="_blank" rel="noopener noreferrer" class="block hover:underline">Hardware Projects</a></li>
+                <li><a href="https://github.com/burntpiano/groceryScraper" target="_blank" rel="noopener noreferrer" class="block hover:underline">Grocery Sales Scraper</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+    <nav id="mobile-menu" class="flex justify-evenly items-end h-16 md:hidden fixed top-0 left-0 w-full bg-black text-white p-4 z-50">
+    <img src="/static/profilePic.jpg" alt="Monochrome forensics diagram" class="rounded-full h-10 w-10">
+    <a href="https://github.com/burntpiano" class="flex items-end gap-4 pl-4 text-sm">@burntpiano</a>
+        <a href="/index.html" class="text-sm hover:underline">Home</a>
+        <a href="/body/about.html" class="text-sm hover:underline">About</a>
+        <a href="/body/background.html" class="text-sm hover:underline">Background</a>
+        <a href="/body/skills.html" class="text-sm hover:underline">Skills</a>
+        <a href="/body/contact.html" class="block hover:underline">Contact</a>
+    </nav>
+
+   <main class="text-justify p-8 mt-4 md:pt-0 md:ml-20 indent-8 flex-1">
+
+        <section class="md:px-20 md:mx-32">
+            <header class="text-center text-3xl pt-5 indent-0">
+                <h1>My background</h1>
+            </header>
+
+                <h3 class="text-center text-xl pt-5 indent-0">Early Exposure</h3>
+            <p class="mt-3">
+                My first exposure to technology was from my dad, a lifelong Apple fanatic. 
+                I grew up playing games like <em>Pathways into Darkness</em> on an Apple LC III in the back of my dad's hobby store. 
+                From an early age, my first introduction to technology was the "other" OS as the default OS.
+            </p>
+            <p class="mt-2">
+                This helped shape my natual curiosity towards tech, even if it was just for entertainment. 
+                It encouraged me to explore primitive systems, simple interface design and user interaction. 
+                Using System 7.1 also intstilled an appreciation for alternative computer platforms.
+            </p>
+            
+            <h3 class="text-center text-xl pt-5 indent-0">Introduction to Windows</h3>
+            <p class="mt-3">
+                Sometime around 2000-2001 we inherited a hand-me-down, no-name beige monster; 
+                Old enough that it still had the iconic turbo-button and could only run Win95. 
+                It was on this machine that I got comfortable with a command line when booting games like <em>Beholder</em> or <em>Blood and Magic</em>.
+            </p>
+            <p class="mt-2">
+                These early experiences taught me how to navigate and perform tasks outside of a GUI, and that comfort of the CLI stuck.
+                Even now, I prefer a terminal over a graphical interface in most instances. 
+                There's something uniquely satisfying about the human-computer interaction without the obfuscation and abstraction of a polished UI.
+            </p>
+
+            <h3 class="text-center text-xl pt-5 indent-0">The other "other" OS</h3>
+            <p class="mt-3">
+                Fast forward to high school, which was the first time we got home internet, my laptop got borked. 
+                I asked my dad how I could fix it, and he suggested Ubuntu. 
+                I burned it to a DVD, and booted into the live environment. 
+                Whatever the problem was, I got it fixed, but more importantly, it marked my first encounter with a UNIX-like OS after years of Mac OS. 
+            </p>
+            
+            <p class="mt-2">
+                Around this time period, I bought a first-gen Raspberry Pi and promptly sold it out of sheer intimidation. 
+                I wasn't quite ready for Linux as my only OS quite yet, but the seed of intrigue was planted.
+            </p>
+
+            <h3 class="text-center text-xl pt-5 indent-0">Covid Curiosity</h3>
+            <p class="mt-3">
+                In 2020, well after high school, I was furloughed at the start of the pandemic and needed a hobby. 
+                Being an eclectic person, I chose an eclectic hobby: fixing Playstation 3s.
+                Around that time, the PlayStation community had just gotten ahold of the SYSCON keys; 
+                this unlocked access to the internal dev tools, including system diagnostic utilities. 
+                In order to leverage those tools to "talk" to the PS3, I needed a direct USB-to-UART connection.
+                Naturally, I chose Ubuntu as my dev environment, because it was Free as in <em>Libre</em>, and free as in <em>price</em>.
+            </p>
+
+            <h3 class="text-center text-xl pt-5 indent-0">Linux: A Love Story</h3>
+            <p class="mt-3">
+                Immediately, I fell in love with the environment. 
+                It was intuitive; it was nerdy; it was powerful; it was Free. Linux was perfect for me. 
+                Over time, Linux became my daily driver.
+                I've distro-hopped, from Debian derivatives to AntiX, and eventually landed on two go-to distributions: Arch and Debian. 
+                Arch for the it's rolling release schedule and a tiling window manager suited for my workflow. 
+                Debian offers stability and edge-case development. 
+                Since then, I've built a home lab around Ubuntu Server for ease, later migrating from bare metal to virtualized. 
+                Running my own infrastructure has taught me Linux administration and Docker from scratch.
+            </p>
+            <p class="mt-2">
+                Hardware modifications and low-level experiments still hold my interest. 
+                MagicMirrors have been a reoccurring project, built on ARM64 and x86-64 architectures. 
+                If I own it, and it's modifiable, it's probably running custom firmware. 
+                Sometimes I do the same for other people - free of charge of course. 
+                I flashed Fresh Tomato firmware on an old router, just for the experience. 
+            </p>
+        
+            <h3 class="text-center text-xl pt-5 indent-0">Formal Education</h3>
+            <p class="mt-3">
+                In 2025, I transferred to Fort Hays State University as a junior to study Web and Mobile Development through their Informatics program. 
+                Up until that point, everything I knew about Linux, networking and firmware had been self-taught. 
+                Programming, however, I needed the structure and pressure to perform. 
+                I still prefer a physical hands-on approach to learning, but formal education has helped round out and sharpen some critical skills.
+            </p>
+        </section>  
+
+    </main>
+
+</body>
+
+</html>
