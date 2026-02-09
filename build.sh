@@ -8,14 +8,20 @@ set -euo pipefail
 BODY_DIR='body'
 PARTIALS_DIR='partials'
 DIST_DIR='dist'
+ROOT_DIR='.'
 
 mkdir -p "$DIST_DIR"
 
-NAV_CONTENT=$(<"$PARTIALS_DIR/nav.html")
-
 for page in "$BODY_DIR"/*.html; do
-  pageName=$("basename $page")
-  sed "s|{{NAV}}|$NAV_CONTENT|" "$page" > "$DIST_DIR/$pageName"
-  echo "Successfully built $DIST_DIR/$pageName"
+  pageName=$(basename "$page")
+  if [[ "$pageName" == "index.html" ]]; then
+    outPath="$ROOT_DIR/$pageName"
+    else
+    outPath="$DIST_DIR/$pageName"
+  fi
+  sed "/{{NAV}}/{
+  r $PARTIALS_DIR/nav.html
+  d
+  }" "$page" > "$outPath"
+  echo "Successfully built $outPath"
 done
-
