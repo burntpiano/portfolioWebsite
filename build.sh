@@ -7,17 +7,17 @@ set -euo pipefail
 
 STAGING_DIR='staging'
 PARTIALS_DIR='partials'
-DIST_DIR='dist'
+BODY_DIR='body'
 ROOT_DIR='.'
 
-mkdir -p "$DIST_DIR"
+mkdir -p "$BODY_DIR"
 
 for page in "$STAGING_DIR"/*.html; do
   pageName=$(basename "$page")
   if [[ "$pageName" == "index.html" ]]; then
     outPath="$ROOT_DIR/$pageName"
     else
-    outPath="$DIST_DIR/$pageName"
+    outPath="$BODY_DIR/$pageName"
   fi
   sed "/{{NAV}}/{
   r $PARTIALS_DIR/nav.html
