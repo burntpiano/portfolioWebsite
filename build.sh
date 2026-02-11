@@ -5,14 +5,14 @@
 
 set -euo pipefail
 
-BODY_DIR='body'
+STAGING_DIR='staging'
 PARTIALS_DIR='partials'
 DIST_DIR='dist'
 ROOT_DIR='.'
 
 mkdir -p "$DIST_DIR"
 
-for page in "$BODY_DIR"/*.html; do
+for page in "$STAGING_DIR"/*.html; do
   pageName=$(basename "$page")
   if [[ "$pageName" == "index.html" ]]; then
     outPath="$ROOT_DIR/$pageName"
